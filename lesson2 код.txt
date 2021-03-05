@@ -1,0 +1,14 @@
+CREATE SCHEMA `example`;
+CREATE TABLE `example`.`users` (
+   `id` INT NOT NULL,
+   `name` VARCHAR(45) NULL,
+   PRIMARY KEY (`id`));
+
+
+Командная строка 
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysqldump example >C:\MySQLdump\sample.sql
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin> 
+
+
+mysqldump sakila actor --where="true limit 100" >C:\MySQLdump\key_word_samp.sql
